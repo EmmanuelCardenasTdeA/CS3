@@ -1,0 +1,85 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; /* Ocupa todo el espacio libre y empuja el footer */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ====== BODY GENERAL ====== */
+body {
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    background-color: #F4F4F4;
+    color: #333;
+}
+
+/* ====== HEADER ====== */
+header {
+    background-color: #2B2B2B;
+    padding: 20px;
+    color: white;
+    
+}
+.empresa-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+/* ====== GALERÍA ====== */
+.productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 30px;
+}
+.producto {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px black;
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.producto img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+.producto h3 {
+    margin-top: 10px;
+    color: #0A84FF;
+}
+.producto p {
+    font-weight: bold;
+}
+
+/* Hover en productos */
+.producto:hover {
+    transform: scale(1.03);
+}
+
+/* ====== FOOTER ====== */
+footer {
+    background-color: #2B2B2B;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
